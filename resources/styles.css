@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* HTML */
+/* Structural design */
 
 * {
 	margin: 0;
@@ -11,6 +11,23 @@ html {
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+/* header,
+main,
+footer {
+	flex-grow: 1;
+} */
+
+main {
+	flex-grow: 1;
 }
 
 
@@ -21,6 +38,8 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	/* max-height: 15.625rem; */
+	height: clamp(150px, 20%, 300px);
 }
 
 .logo.top {
@@ -54,50 +73,12 @@ header {
 }  
 
 
-
-/* MAIN */
-
-main {
-	background-color: aqua;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-h1 {
-	margin-top: 25px;
-	margin-bottom: 25px;
-}
-
-.category {
-	/* border: 1px red solid; */
-	width: 60%;
-	margin-block: 20px;
-	display: flex;
-	justify-content: space-around;
-}
-
-.service-card {
-	border: 2px black solid;
-	border-radius: 4rem;
-	padding: 2rem;
-	width: 8rem;
-	text-align: center;
-}
-
-
-
-.category a {
-	color: black;
-	text-decoration: none;
-}
-
-
 /* FOOTER */
 
 footer {
 	width: 100%;
-	margin-top: 30px;
+	max-height: 6.25rem;
+	min-height: 5rem;
 	background-color: rgb(155, 192, 247);
 	display: flex;
 	justify-content: center;
