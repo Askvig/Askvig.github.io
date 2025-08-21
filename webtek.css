@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(143, 14, 202);
+    margin: 20px 0px;
+}
+
+.linkrr {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.rickrol {
+    height: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rickrol:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.link {
+    color: rgb(201, 181, 7);
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+}
+
+.link:hover {
+    transform: scale(1.5);
+}
+
+ol {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+div {
+    display: flex;
+}
+
+iframe {
+    background-image: linear-gradient(to bottom, rgb(255, 152, 152) 60%, red);
+    border-radius: 10px;
+}
